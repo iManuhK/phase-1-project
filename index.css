@@ -1,0 +1,80 @@
+html, body, *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #F5FBF8;
+    font-family: 'Bentham';
+}
+.bentham-regular {
+    font-family: "Bentham", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+#navigation {
+    display:flex;
+    justify-content: space-between;
+    height: 20px;
+    padding: 30px 100px;
+    border-bottom: 2px solid #EBF8F1;
+    background: #EBF8F1;
+    align-items: center;
+    margin: 10px 20px;
+}
+#logo {
+    border: 1px solid #EBF8F1;
+    border-radius: 50%;
+    padding: 0;
+    width: 60px;
+    height: auto;
+}
+      
+#logo:hover {
+    box-shadow: 0 0 2px 1px #AEE2C8;
+}
+
+#navigation h1{
+    background:#EBF8F1;
+    text-wrap:balance
+}
+#menu-items {
+    gap: 20px;
+    background:#EBF8F1;
+    font-size: 20px;
+}
+#menu-items a{
+    text-decoration: none;
+    background:#EBF8F1;
+    color: inherit;
+}
+div#main-content {
+    display: flex;
+    margin: 10px 20px;
+    justify-content: space-between;
+    gap:10px
+}
+#left-pane {
+    width: 25%;
+}
+#left-pane img{
+    width: 100%;
+    border-radius: 4%;
+}
+#centre-pane {
+    width: 50%;
+}
+#comments-pane {
+    width: 25%;
+}
+ul#comments {
+    list-style-type: none;
+}
+#text-area {
+    width: 100%;
+    margin: 0;
+    padding-top: 1em;
+    resize: none;
+}
+h3 {
+    color: #838986
+}
+    
