@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="index.css">
     <title>Document</title>
+    <script src="./index.js" defer></script>
 </head>
 <body>
     <nav id="navigation" class="menu-bar">
@@ -31,20 +32,58 @@
     <div id="main-content" class="content">
         <div id="left-pane">
         </div>
-        <div id="centre-pane"></div>
-        <!--<h5>Local Listings</h5>
-        <input type="text"> -->
+        <div id="centre-pane">
+            <div id="filter-search">
+                <label for="build-Buy">Building or Buying?:</label>
+                <select name="Building or buying?" id="build-rent">
+                    <option value="--All--">--All--</option> 
+                    <option value="Build">Build</option> 
+                    <option value="Buy">Buy</option>
+                </select>
+                <label for="Location">Location:</label>
+                <select name="Location" id="filter-location">
+                    <option value="--All--">--All--</option> 
+                    <option value="Ngong">Ngong</option> 
+                    <option value="Karen">Karen</option>
+                </select>
+            </div>
+            <div id ="card-images">
+                <!--Images go here-->
+            </div>
+            <div id="container-add-listing">
+                <form id="new-listing">
+                    <h4>Add a Listing</h4>
+                    <label for="form-tagline">Caption: </label>
+                    <input type="text" name="form-tagline" id="form-tagline" required />
+                    <label for="form-image">Image: </label>
+                    <input type="text" name="form-image" id="form-image" required/>
+                    <label for="form-description">Full Description: </label>
+                    <input type="text" name="form-description" id="form-description" />
+                    <label for="form-category">Category: </label>
+                    <select id="form-category" name="form-category" >
+                        <option value="Buy">Buy</option>
+                        <option value="Build">Build</option>
+                    </select>
+                    <input style="font-size:48px;color:red" type="hidden" id='delete-button' value = "" />
+                    <label for="form-location">Location: </label>
+                    <input type="text" name="form-location" id="form-location" />
+                    <label for="form-price">Price: </label>
+                    <input type="number" name="form-price" id="form-price" required/>
+                    <input type="hidden" id='like-button' value="♡" />
+                    <input type="submit" id='submit-button' value="New Listing" />
+                  </form>
+            </div>
+        </div>
         <div id="comments-pane">
             <h3>Comments</h3>
             <ul id="comments" class="lists">
-                <li>comments go here</li>
+               <!----<li>comments go here</li>-->
             </ul>
             <form id="add-comment">
                 <textarea id="text-area" name="my-comments" rows="4" cols="50" wrap=physical placeholder=" "></textarea>
-                <input type="submit" value="Comment">
+                <input id="comment-btn" type="submit" value="Comment">
             </form>
         </div>
     </div>
-<script src="./index.js"></script>
 </body>
 </html>

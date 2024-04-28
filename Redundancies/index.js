@@ -50,21 +50,8 @@ fetch('http://localhost:3000/listings')
     filterListings(listings)
  
 function likerFunc(){
-const EMPTY_HEART = '♡'
-const FULL_HEART = '♥'
-const isLiked = false
-
-if (isLiked) {
-    liker.innerHTML = EMPTY_HEART
-    liker.className = ""
-    isLiked = true;
-    }
-if(!isLiked) {
-    liker.innerHTML = FULL_HEART
-    liker.className = "activated-heart"
-    isLiked = true;
-}
-
+let EMPTY_HEART = '♡'
+let FULL_HEART = '♥'
  
 console.log(liker.innerText)
 
@@ -194,6 +181,14 @@ fetch('http://localhost:3000/comments')
         <button hidden=hidden class=delete-button name=delete>x</button>`
         savedComment.addEventListener('click',deleteComment)
         ulComments.appendChild(savedComment)
+    
+function deleteComment(){
+// let deleteBtn = document.getElementsByClassName('delete-button')
+// deleteBtn.setAttribute('hidden',"")
+// // deleteBtn.addEventListener('click',e=>{
+//     console.log(deleteBtn.innerHTML)
+// })
+}   
 
 });
 
